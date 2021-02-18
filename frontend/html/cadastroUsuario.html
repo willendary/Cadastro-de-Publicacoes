@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../frontend/style/css/bootstrap.css">
+    <link rel="stylesheet" href="../../frontend/style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../frontend/style/publicacoes.css">
+    <title>Cadastrar novo usuário</title>
+</head>
+
+<body>
+    <form method="POST" action="../../backend/php/incluiUsuario.php">
+        <div class="w-25 p-3 card form-control container">
+            <label for="">Chave</label>
+            <input type="text" name="chave" class="form-control" required><br>
+            <label for="">Nome usuário</label>
+            <input type="text" name="nome" class="form-control" required><br>
+            <label for="">Senha</label>
+            <input type="password" name="senha" class="form-control" required><br>
+            <label for="">Confirme a senha do Usuário</label>
+            <input type="text" name="confirmaSenha" class="form-control" required><br>
+            <input type="checkbox" class="form-check-input" name="administrador" value="T">
+            <label class="form-check-label" for="flexCheckChecked">Usuário administrador</label><br><br>
+            <button class="btn btn-warning">Salvar</button>
+        </div>
+        <button class="btn btn-secondary">Voltar para a página inicial</button>
+        <footer>
+            <script lang="javascript" src="../../style/js/bootstrap.js"></script>
+            <script lang="javascript" src="../../style/js/bootstrap.min.js"></script>
+            <script lang="javascript" src="../../js/publicacoes.js"></script>
+        </footer>
+    </form>
+</body>
+
+</html>
